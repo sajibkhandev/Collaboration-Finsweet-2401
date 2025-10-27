@@ -1,9 +1,10 @@
+import React from 'react';
 import logoImage from '../../public/logo.png'
 import featureHeroImage from "../../public/feature.png";
 import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
 
-const Features = () => {
+const Feature = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -88,4 +89,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Feature;
