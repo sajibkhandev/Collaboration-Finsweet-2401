@@ -1,14 +1,19 @@
 import React from 'react';
 import logoImage from '../../public/logo.png'
 import featureHeroImage from "../../public/feature.png";
-import React, { useState } from "react";
+import  { useState } from "react";
 import { NavLink } from 'react-router-dom';
-
+import Container from '../components/Container';
+import cardImage from '../../public/Group1.png'
+import Flex from '../components/Flex';
 const Feature = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#0b0b2b] text-white">
+    <>
+{/* Here is here section */}
+<div className="min-h-screen bg-[#0b0b2b] text-white">
+<Container>
       {/* Navbar */}
       <nav className="flex justify-between items-center px-6 md:px-10 py-4 border-b border-[#6c4bf4] relative">
         {/* Logo */}
@@ -21,7 +26,7 @@ const Feature = () => {
         <ul className="hidden md:flex items-center space-x-16  ml-100 text-gray-300">
           <li className="hover:text-white cursor-pointer">Home</li>
           <li className="hover:text-white cursor-pointer">About us</li>
-         <NavLink to="/"> <li className="hover:text-white cursor-pointer">Features</li></NavLink>
+         <NavLink to="/feature"> <li className="hover:text-white cursor-pointer">Features</li></NavLink>
           <li className="hover:text-white cursor-pointer">Pricing</li>
           <li className="hover:text-white cursor-pointer">FAQ</li>
           <li className="hover:text-white cursor-pointer">Blog</li>
@@ -85,7 +90,65 @@ const Feature = () => {
           />
         </div>
       </div>
+</Container>
     </div>
+
+    <section className='mt-24'>
+   <h1 className="text-5xl text-center font-bold! width-[100px]">The benefits of working <br /> with our team</h1>
+      <Container>
+ <Flex> 
+   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mt-24">
+   {/* feature cart--1 */}
+        <div className="w-full max-w-[500px] bg-[#F4F6FC] shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl p-10 items-start text-center md:text-left">
+          <img src={cardImage} alt="Feature" className="w-16 h-16 mb-6 mx-auto md:mx-0" />
+          <h3 className="text-2xl font-bold mb-4 text-[#0b0b2b]">
+            Customize with ease
+          </h3>
+          <p className="font-semibold text-gray-700 font-poppins text-sm md:text-base leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
+          </p>
+        </div>
+
+
+
+
+{/* feature card--2*/}
+        <div className="w-full max-w-[500px] bg-[#F4F6FC] shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl p-10 flex flex-col items-start text-center md:text-left">
+          <img src={cardImage} alt="Feature" className="w-16 h-16 mb-6 mx-auto md:mx-0" />
+          <h3 className="text-2xl font-bold mb-4 text-[#0b0b2b]">
+            Customize with ease
+          </h3>
+          <p className="font-semibold text-gray-700 font-poppins text-sm md:text-base leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
+          </p>
+        </div>
+
+
+
+
+
+
+{/* feature card--1 */}
+        <div className="md:w-full max-w-[600px] bg-[#F4F6FC] shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl p-10 flex flex-col items-start text-center md:text-left">
+          <img src={cardImage} alt="Feature" className="w-16 h-16 mb-6 mx-auto md:mx-0" />
+          <h3 className="text-2xl font-bold mb-4 text-[#0b0b2b]">
+            Customize with ease
+          </h3>
+          <p className="font-semibold text-gray-700 font-poppins text-sm md:text-base leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
+          </p>
+        </div>
+
+   </div>
+  
+  
+  </Flex>
+      </Container>
+    </section>
+    </>
   );
 };
 
