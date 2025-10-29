@@ -10,7 +10,7 @@ const Home = () => {
     <Container>
       
       <Flex className='justify-center'>
-       <h1>Wel</h1>
+       <h1>Welcome</h1>
      
       </Flex>
     </Container>
