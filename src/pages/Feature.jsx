@@ -113,7 +113,7 @@ const Feature = () => {
               isActive ? "text-white font-bold" : "hover:text-white"
             }
           >
-            Blog Reading
+           FAQ
           </NavLink>
         </li>
       </ul>
@@ -170,7 +170,7 @@ const Feature = () => {
           </li>
           <li>
             <NavLink to="/blog" className="hover:text-white">
-              Blog Reading
+           FAQ
             </NavLink>
           </li>
 
@@ -579,11 +579,11 @@ Client-first </h1>
             We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.
           </p>
           <div className="flex gap-4 text-2xl">
-            <FaFacebook />
-       <FaXTwitter />
-       <FaSquareInstagram />
-       <FaLinkedin />
-            
+            <FaFacebook className="cursor-pointer hover:text-[#FAD776]"/>
+       <FaXTwitter className="cursor-pointer hover:text-[#FAD776]" />
+       <FaSquareInstagram className="cursor-pointer hover:text-[#FAD776]" />
+       <FaLinkedin className="cursor-pointer hover:text-[#FAD776]"/>
+           
           </div>
         </div>
       </div>
@@ -592,12 +592,12 @@ Client-first </h1>
       <div className="bg-white text-[#1E1D5E] flex flex-col md:flex-row justify-between items-center px-10 py-4 text-sm">
         <p>Copyright 2025, Finsweet.com</p>
         <div className="flex gap-6 mt-2 md:mt-0">
-          <a href="#" className="hover:text-[#FAD776] no-underline">Home</a>
-          <a href="#" className="hover:text-[#FAD776] no-underline">About us</a>
-          <a href="#" className="hover:text-[#FAD776] no-underline">Features</a>
-          <a href="#" className="hover:text-[#FAD776] no-underline">Pricing</a>
-          <a href="#" className="hover:text-[#FAD776] no-underline">FAQ</a>
-          <a href="#" className="hover:text-[#FAD776] no-underline">Blog</a>
+          <a href="#" className="hover:text-[#FAD776] no-underline text-xl font-extrabold">Home</a>
+          <a href="#" className="hover:text-[#FAD776] no-underlinetext-xl font-extrabold">About us</a>
+          <a href="#" className="hover:text-[#FAD776] no-underlinetext-xl font-extrabold">Features</a>
+          <a href="#" className="hover:text-[#FAD776] no-underlinetext-xl font-extrabold">Pricing</a>
+          <a href="#" className="hover:text-[#FAD776] no-underlinetext-xl font-extrabold">FAQ</a>
+          <a href="#" className="hover:text-[#FAD776] no-underlinetext-xl font-extrabold">Blog</a>
         </div>
       </div>
     </footer>
