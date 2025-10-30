@@ -20,7 +20,7 @@ const About = () => {
           <h1 className="text-5xl font-bold mb-4">Our designs solve <br /> problems</h1>
           <p className="text-lg mb-6">
             We create thoughtful, user-focused designs that combine creativity and
-            technology to deliver better results for businesses and users.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            technology to deliver better results for businesses and users.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           </p>
            </div>
         <div>
